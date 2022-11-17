@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}Login Page{% endblock title %}
+
+
+
+{% block content %}
+<h1 class="text-3xl font-bold underline">
+    Login Page Page
+  </h1>
+<form action="." method="post"> 
+    {% csrf_token %}
+    {{form.as_p}}
+    <button class="py-4 px-8 bg-teal-500 text-white rounded-xl" type="submit">Login</button>
+
+</form>
+
+
+{% endblock content %}
